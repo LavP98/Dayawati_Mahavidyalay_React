@@ -21,21 +21,23 @@ export interface NavItem {
   navItem: string
 }
 
+const assetBase = import.meta.env.BASE_URL
+
 export const carouselImages: CarouselImage[] = [
-  { id: 3, imgName: 'founder-phone', imgUrl: '/assets/carousel_pics/founder_phone.JPG' },
-  { id: 1, imgName: 'college-entrance', imgUrl: '/assets/carousel_pics/main_college.jpeg' },
-  { id: 2, imgName: 'classroom', imgUrl: '/assets/carousel_pics/classroom.jpeg' },
-  { id: 4, imgName: 'classroom2', imgUrl: '/assets/carousel_pics/classroom2.jpeg' },
-  { id: 5, imgName: 'college-front', imgUrl: '/assets/carousel_pics/college-front.jpeg' },
-  { id: 6, imgName: 'college2', imgUrl: '/assets/carousel_pics/college2.jpeg' },
-  { id: 7, imgName: 'library', imgUrl: '/assets/carousel_pics/library.jpeg' },
-  { id: 8, imgName: 'night-view', imgUrl: '/assets/carousel_pics/night-view.jpeg' },
-  { id: 9, imgName: 'advertise', imgUrl: '/assets/carousel_pics/advertise.jpg' },
-  { id: 10, imgName: 'night-view-2', imgUrl: '/assets/carousel_pics/night-view-2.jpeg' },
-  { id: 11, imgName: 'phone-banner-1', imgUrl: '/assets/carousel_pics/phone-banner-1.jpeg' },
-  { id: 12, imgName: 'phone-group-1', imgUrl: '/assets/carousel_pics/phone-group-1.jpeg' },
-  { id: 13, imgName: 'phone-group-2', imgUrl: '/assets/carousel_pics/phone-group-2.jpeg' },
-  { id: 14, imgName: 'phone-group-boys', imgUrl: '/assets/carousel_pics/phone-group-boys.jpeg' },
+  { id: 3, imgName: 'founder-phone', imgUrl: `${assetBase}assets/carousel_pics/founder_phone.JPG` },
+  { id: 1, imgName: 'college-entrance', imgUrl: `${assetBase}assets/carousel_pics/main_college.jpeg` },
+  { id: 2, imgName: 'classroom', imgUrl: `${assetBase}assets/carousel_pics/classroom.jpeg` },
+  { id: 4, imgName: 'classroom2', imgUrl: `${assetBase}assets/carousel_pics/classroom2.jpeg` },
+  { id: 5, imgName: 'college-front', imgUrl: `${assetBase}assets/carousel_pics/college-front.jpeg` },
+  { id: 6, imgName: 'college2', imgUrl: `${assetBase}assets/carousel_pics/college2.jpeg` },
+  { id: 7, imgName: 'library', imgUrl: `${assetBase}assets/carousel_pics/library.jpeg` },
+  { id: 8, imgName: 'night-view', imgUrl: `${assetBase}assets/carousel_pics/night-view.jpeg` },
+  { id: 9, imgName: 'advertise', imgUrl: `${assetBase}assets/carousel_pics/advertise.jpg` },
+  { id: 10, imgName: 'night-view-2', imgUrl: `${assetBase}assets/carousel_pics/night-view-2.jpeg` },
+  { id: 11, imgName: 'phone-banner-1', imgUrl: `${assetBase}assets/carousel_pics/phone-banner-1.jpeg` },
+  { id: 12, imgName: 'phone-group-1', imgUrl: `${assetBase}assets/carousel_pics/phone-group-1.jpeg` },
+  { id: 13, imgName: 'phone-group-2', imgUrl: `${assetBase}assets/carousel_pics/phone-group-2.jpeg` },
+  { id: 14, imgName: 'phone-group-boys', imgUrl: `${assetBase}assets/carousel_pics/phone-group-boys.jpeg` },
 ]
 
 export const courseDetails: CourseDetail[] = [
@@ -112,5 +114,5 @@ export const contactInfo = {
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.9508999569042!2d82.11129934221752!3d26.718720655543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc68ef3acfa73e147!2zMjbCsDQzJzA2LjUiTiA4MsKwMDYnNDIuNSJF!5e0!3m2!1sen!2sin!4v1653139359078!5m2!1sen!2sin',
 }
 
-export const pamphletUrl = '/assets/pamphlet/college_pamphlet.jpeg'
-export const logoUrl = '/assets/images/logo final.JPG'
+export const pamphletUrl = `${assetBase}assets/pamphlet/college_pamphlet.jpeg`
+export const logoUrl = `${assetBase}assets/images/logo final.JPG`
